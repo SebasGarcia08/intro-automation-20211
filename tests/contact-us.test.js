@@ -12,7 +12,7 @@ test('The contact us option is successfully', async (t) => {
     await t.click("#contact-link")
     await t.click("#id_contact")
     await t.click(Selector("#id_contact").withText(subjectHeading))
-    await t.typeText("#email", emailAdress)
+    await t.typeText("#email", emailAdress) 
     await t.typeText("#message", message)
     await t.click("#submitMessage")
 
